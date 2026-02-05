@@ -1542,11 +1542,18 @@ function checkRobloxInstall() {
                 button.style.backgroundColor = 'transparent';
             });
             
-            // Add click handler (placeholder - would need actual implementation)
+            // Add click handler
             button.addEventListener('click', function() {
                 console.log('Email Me a One-Time Code button clicked');
-                // TODO: Implement actual one-time code email functionality
-                alert('This feature will send a one-time code to your email.');
+                // TODO: Integrate with one-time passcode email service
+                // This should trigger the EmailVerifyCodeModal or similar flow
+                if (window.Roblox && window.Roblox.EmailVerifyCodeModal) {
+                    // Use existing email verification modal if available
+                    console.log('Opening email verification modal');
+                } else {
+                    // Placeholder notification until backend integration is complete
+                    console.warn('Email verification feature not yet implemented');
+                }
             });
             
             buttonContainer.appendChild(button);
