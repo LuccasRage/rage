@@ -956,6 +956,49 @@ Roblox.Endpoints.Urls = Roblox.Endpoints.Urls || {};
         class="login-container"
         data-return-url=""
         data-enable-react-ui="true">
+    <!-- Static Login Form -->
+    <div class="login-form-container" style="max-width: 400px; margin: 50px auto; padding: 30px; background: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <h2 style="text-align: center; font-size: 28px; font-weight: 600; margin-bottom: 30px; color: #191919;">Login to Roblox</h2>
+        
+        <form id="login-form" style="display: flex; flex-direction: column; gap: 16px;">
+            <div class="form-group">
+                <input type="text" id="username" name="username" placeholder="Username/Email/Phone Number" 
+                    style="width: 100%; padding: 12px 16px; font-size: 16px; border: 1px solid #b8b8b8; border-radius: 4px; box-sizing: border-box;">
+            </div>
+            
+            <div class="form-group">
+                <input type="password" id="password" name="password" placeholder="Password" 
+                    style="width: 100%; padding: 12px 16px; font-size: 16px; border: 1px solid #b8b8b8; border-radius: 4px; box-sizing: border-box;">
+            </div>
+            
+            <button type="submit" class="btn-primary-lg" 
+                style="width: 100%; padding: 12px 16px; font-size: 16px; font-weight: 600; color: #fff; background-color: #00a2ff; border: none; border-radius: 4px; cursor: pointer; margin-top: 8px;">
+                Log In
+            </button>
+        </form>
+        
+        <div class="login-links" style="margin-top: 24px; display: flex; flex-direction: column; gap: 12px;">
+            <a href="https://www.roblox.com/login/forgot-password-or-username" class="text-link" 
+                style="color: #00a2ff; text-decoration: none; font-size: 14px; text-align: center;">
+                Forgot Password or Username?
+            </a>
+            
+            <button type="button" id="email-one-time-code-btn" class="btn-secondary-lg" 
+                style="width: 100%; padding: 12px 16px; font-size: 16px; font-weight: 600; color: #191919; background-color: #fff; border: 1px solid #b8b8b8; border-radius: 4px; cursor: pointer;">
+                Email Me a One-Time Code
+            </button>
+            
+            <button type="button" id="another-device-btn" class="btn-secondary-lg" 
+                style="width: 100%; padding: 12px 16px; font-size: 16px; font-weight: 600; color: #191919; background-color: #fff; border: 1px solid #b8b8b8; border-radius: 4px; cursor: pointer;">
+                Another Logged In Device
+            </button>
+        </div>
+        
+        <div class="signup-link" style="margin-top: 24px; text-align: center; font-size: 14px;">
+            <span style="color: #606060;">Don't have an account? </span>
+            <a href="https://www.roblox.com/account/signupredir" style="color: #00a2ff; text-decoration: none; font-weight: 600;">Sign Up</a>
+        </div>
+    </div>
 </div>
 
 
