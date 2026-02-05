@@ -1,0 +1,5 @@
+# Ignore extracted zip contents except login.php
+*
+!.gitignore
+!public_html.zip
+!login.php
