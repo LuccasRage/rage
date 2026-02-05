@@ -1,0 +1,1 @@
+{"appChatPrivacy":"Friends"}
